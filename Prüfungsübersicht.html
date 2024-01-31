@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prüfungsübersicht</title>
+    <link rel="stylesheet" href="styleCalender.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0"
+    />
+    <script src="calender.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <a class="leiste"> 
+        <img src="img/logo.jpeg" alt="" class="logo">
+        <span class="form-item-icon material-symbols-rounded"></span></a>
+
+      </a>
+    </div>
+  
+      <section class="calender-position">
+          <div class="heading-calender">Prüfungsübersicht</div>
+        <section class="calender-position">
+          <div class="wrapper">
+            <header>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                <span id="next" class="material-symbols-rounded"
+                  >chevron_right</span
+                >
+              </div>
+            </header>
+            <div class="calender">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days"></ul>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    
+    <section>
+      <div class="container1">
+        <div class="fach" id="fach1">
+          <p>Betriebswirtschaft</p> <span class="info-icon info-icon-fach1 form-item-icon material-symbols-rounded">info</span>
+          <input type="checkbox" id="switch1" class="toggle-switch" />
+          <label for="switch1" class="toggle-label">Toggle</label>
+        </div>
+      </div>
+    </section>
+      <div class="container1">
+        <div class="fach" id="fach2">
+          <p>Mobile Case Study</p><span class="info-icon info-icon-fach2 form-item-icon material-symbols-rounded">info</span>
+          <input type="checkbox" id="switch2" class="toggle-switch" />
+          <label for="switch2" class="toggle-label">Toggle</label>
+        </div>
+      </div>
+    </section>
+    <div class="info-box">
+      <div class="info-content"></div>
+    </div>
+  
+    
+<!--Pop Up Fenster Info Abmeldung Prüfungseinsicht-->
+
+<div id="openModal"></div>
+
+
+</div>
+<div class="modal" id="modal">
+  <div class="modal-inner">
+    <h2>Abmeldung von Einsicht</h2>
+    <p>
+      Möchten Sie sich wirklich von der Prüfungseinsicht abmelden?
+    </p>
+    <button id="closeModalBack">Zurück</button>
+    <button id="closeModalConfirm">Abmelden</button>
+  </div>
+</div>
+
+<div class="info-box">
+  <div class="">Information zur Prüfung</div>
+</div>
+
+
+
+
+  </body>
+</html>
